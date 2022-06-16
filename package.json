@@ -2,7 +2,7 @@
   "name": "netlify-express",
   "version": "0.0.1",
   "description": "Example of how to deploy a Express.js Netlify app.",
-  "main": "functions/server.js",
+  "main": "express/server.js",
   "scripts": {
     "build": "netlify-lambda build express",
     "start": "nodemon server-local.js"
@@ -21,7 +21,13 @@
     "url": "https://github.com/neverendingqs/netlify-express/issues"
   },
   "homepage": "https://github.com/neverendingqs/netlify-express#readme",
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.8",
+    "node-fetch": "^3.2.6",
+    "node-fetch-commonjs": "^3.1.1"
+  },
   "devDependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
